@@ -31,5 +31,30 @@ console.log(softCopyTeas);
 popularTeas.shift()
 console.log(softCopyTeas);
 
+// q7
+let topCities = ["Berlin", "Singapore", "New York"]
+let hardCopyCitis = [...topCities]
+console.log(hardCopyCitis);
+topCities.pop()
+console.log(topCities);
+console.log(hardCopyCitis);
 
+// q8
+let europeanCities = ["Paris", "Rome"]
+let asianCities = ["Tokyo", "Bangkok"]
 
+let worldCities = europeanCities.concat(asianCities)
+console.log(worldCities);
+// or
+let wc = [...europeanCities, ...asianCities]
+console.log(wc);
+
+// q9
+let teaMenu = ["Masala chai", "Oolong tea", "green tea", "earl grey"]
+let menuLength = teaMenu.length
+console.log(`length: ${menuLength}`);
+
+// q10
+let cityBucketList = ["London", "Kyoto", "Cape Town", "Vancouver"]
+let isLondonInList = cityBucketList.includes("london")
+console.log(isLondonInList);
