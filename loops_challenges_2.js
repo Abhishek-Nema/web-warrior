@@ -70,3 +70,47 @@ for (const city in worldCities) {
     largeCities[city] = worldCities[city]
 }
 console.log(largeCities);
+
+// q7
+let arrTeas = ["earl grey", "green tea", "chai", "oolong tea"]
+let availableTeas = []
+
+// q8
+let cities = ["Berlin", "Tokyo", "Sydney", "Paris"]
+let travelledCities = []
+
+cities.forEach(function(elm) {
+    if(elm==="Sydney"){
+        return;
+    }
+    travelledCities.push(elm)
+});
+console.log(travelledCities);
+
+// q9
+let arrayOfNumbers = [2, 5, 7, 9]
+let doubledNumbers = []
+
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    if(arrayOfNumbers[index]===7){
+        continue
+    }
+    let multipliedAns = arrayOfNumbers[index] * 2
+    doubledNumbers.push(multipliedAns)
+}
+console.log(doubledNumbers);
+
+// q10
+let varitiesOfTeas = ["chai", "green tea","black tea", "jasmine tea", "herbal tea"]
+let shortTeas = []
+
+for (const teaName of varitiesOfTeas) {
+    if(teaName.length > 10) {
+        break
+    }
+    shortTeas.push(teaName)
+}
+console.log(shortTeas);
+
+
+
